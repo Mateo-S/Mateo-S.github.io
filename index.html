@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mateo Silver</title>
+
+    <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/d652fa813a.js"></script>
+    <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Bootstrap 4.2.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- ImageHover.css Library -->
+        <link rel="stylesheet" href="css/imagehover.min.css">
+    <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Domine|La+Belle+Aurore&display=swap" rel="stylesheet">
+    <!-- Typed.js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</head>
+
+<body>
+        <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+                <h2>I'm<br></h2><h1 class="title" style="text-decoration: underline">Mateo Silver<br></h1><h2>and I love<br></h2>
+              <div class="showProgramHidden"><h2>Programming</h2></div>
+              <div class="showPhotoHidden"><h2>Photography</h2></div>
+        </div></div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 showProgramTrigger" id="trigger">
+                <figure class="imghvr-reveal-up" style="background-color:#D14233;">
+                  <img src="https://www.gettingsmart.com/wp-content/uploads/2017/12/Program-Code-Feature-Image.jpg">
+                </figure>
+            </div>
+            <div class="col-md-3 showPhotoTrigger" id="trigger">
+                <figure class="imghvr-reveal-up" style="background-color:#D14233;">
+                  <img src="https://media.wired.com/photos/5bcfb5408a1c2974955b2b2d/191:100/pass/instax-mini-70.jpg">
+                </figure>
+            </div>
+        </div>
+
+</body>
+<script>$(document).ready(function() {
+    $(".showProgramTrigger").on("mouseover", function() {
+        $(".showProgramHidden").show();
+    }).on("mouseout", function() {
+        $(".showProgramHidden").hide();
+    });
+});</script>
+<script>$(document).ready(function() {
+    $(".showPhotoTrigger").on("mouseover", function() {
+        $(".showPhotoHidden").show();
+    }).on("mouseout", function() {
+        $(".showPhotoHidden").hide();
+    });
+});</script>
+<script>
+// Can also be included with a regular script tag
+import Typed from 'typed.js';
+
+var options = {
+strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+typeSpeed: 40
+}
+
+var typed = new Typed(".element", options);
+</script>
+</html>

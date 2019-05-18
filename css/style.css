@@ -1,0 +1,38 @@
+.showPhotoTrigger{
+    border-image-source: linear-gradient(10deg, #fe01f5 0%, #2e113d 100%);
+    /* border-image-source: url('myimage.png') */
+}
+
+.showPhotoHidden{
+  display: none;
+  font-family: 'La Belle Aurore', cursive;
+
+}
+
+.showProgramTrigger{
+    display: block;
+    border-image-source: linear-gradient(10deg, #fe01f5 0%, #2e113d 100%);
+    /* border-image-source: url('myimage.png') */
+}
+
+.showProgramHidden{
+    display: none;
+    font-family: 'Domine', serif;
+}
+
+.mainCol{
+    padding-left:
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+#trigger{
+    height: 30vh;
+}
+
+.imghvr-reveal-up img{
+   clip: rect(0px,60px,200px,0px);
+}
