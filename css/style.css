@@ -8,9 +8,9 @@ html {
 
 #construction {
   margin: 0 auto;
-  display: inline-block;
-  height: 20%;
-  width: auto;
+  left: 50%;
+  transform: translateX(-50%) translateY(40%);
+  text-align: center;
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 5%;
@@ -20,4 +20,6 @@ html {
   font-family: sans-serif;
   font-size: 1.2em;
   color: white;
+  position: absolute;
+  z-index:  2;
 }
